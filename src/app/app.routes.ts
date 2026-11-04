@@ -5,8 +5,9 @@ import { RegistrationPage } from './registration-page/registration-page';
 export const routes: Routes = [
     {
         path: '',
-        component: HomePage,
+        component: RegistrationPage,
         title: 'Home',
+        pathMatch: 'full',
     }, 
     {
         path:'registration',
@@ -15,6 +16,6 @@ export const routes: Routes = [
     },
     {
         path: '**',
-        redirectTo: '',
+        redirectTo: 'registration',
     }
 ];
